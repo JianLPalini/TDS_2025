@@ -1,0 +1,65 @@
+CREATE TABLE usuarios (    
+    id_usuarios INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    CPF CHAR(11) NOT NULL
+);
+
+INSERT INTO usuarios (nome, email, CPF) VALUES
+('Sidnei', 'siddogelo@brabão.com', 12345678912),
+('Arthur', 'lumbriga@doida.com', 21987654321),
+('Kalleo', 'kriptoniano@doente.com', 55566622217),
+('Luiz', 'front@viajante.com', 99988855544);
+
+SELECT * FROM usuarios;
+
+CREATE TABLE produtos (
+    id_produtos INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco DECIMAL (10, 2) NOT NULL
+);
+INSERT INTO produtos (nome, preco)
+VALUES
+('Ametista', 4000.00),
+('Safira', 1000.00),
+('Bronze', 106.00),
+('Esmeralda', 5350.00),
+('Diamante', 1500.00),
+('Ouro', 1000.00);
+
+
+SELECT * FROM produtos;
+
+CREATE TABLE categorias (
+	id_categorias INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+INSERT INTO categorias (nome)
+VALUES
+('Pedras Preciosas'),
+('Metais');
+
+CREATE TABLE pedidos (
+    id_pedidos INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    id_produto INT NOT NULL,
+    id_categorias INT NOT NULL,
+    quantidade INT NOT NULL,
+    data_pedido DATETIME DEFAULT CURRENT_TIMESTAMP,
+    
+    
+    -- Definindo FKs com CASCADE
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuarios)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+
+    FOREIGN KEY (id_produto) REFERENCES produtos(id_produtos)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE,
+   
+       FOREIGN KEY (id_produto) REFERENCES categorias(id_categorias)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
+        
+);
