@@ -1,0 +1,36 @@
+***Estudo de Caso Loja peça automotiva(Online e fisica)***
+
+- **Requisitos Funcionais:**
+
+I - Cadastro de clientes :
+
+II - Controle de Estoque:
+
+III -Cadastro de Peças:
+
+IV - Cadastro de vendas por ID do funcionário, data da venda com numero da NF
+
+V - Sistema de Rastreamento de mercadoria e entrega
+
+VI - Sistema de Login para o cliente
+
+VII - Sistema de forma de pagamento
+
+VIII - Sistema de Localização endereço
+
+IX - Sistema de frete
+
+X - Sistema de Busca e Filtro, por nome de peça e modelo de carro e marca e ano e por tamanho e espessura.
+
+XI - Sistema de desconto para parceiro e revendedor
+
+- **Requisitos Não funcionais:**
+- Tempo de resposta do banco de dados
+- Tempo de cadastro
+- Quantidade de Dispositivos
+- Quantidade de compras
+- Quantidades de Acesso
+- Limite de acesso
+- Tempo de Sessão
+- Sistema de Segurança de dados com hash
+- ‘Sistema Failtobain sistema recaptcha
