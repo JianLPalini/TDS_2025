@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+}
+
+#t,#d{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 200px;
+    border: 7px solid black;
+}
+#res{
+    font-size: 30px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:200px;
+
+}

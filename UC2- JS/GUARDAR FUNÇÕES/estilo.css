@@ -1,0 +1,62 @@
+/* Estilização geral do corpo da página */
+body{
+    background-image: url(https://th.bing.com/th/id/R.517d50010dfe6e71d17548cae0f6f0dc?rik=M0qAHp16d7vgfw&pid=ImgRaw&r=0); /* Cor de fundo da página */
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipo de fonte */
+    padding: 80px; /* Espaçamento interno de 20 pixels (px) em todos os lados */
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+
+
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    backdrop-filter: blur(20px); /*Muda a transparencia da caixa */
+    height: 700px;
+    border-radius: 20px;
+    border: 3px solid white;
+    opacity: 98%; /* Opacidade da caixa */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* Estilo do título (h1) */
+h1{
+    text-align: center; /* Centraliza o texto */
+    color: rgb(1, 12, 11); /* Vai mudar só a cor do h1, outros textos que podem ter não muda*/
+    font-size: 50px;
+    margin: 30px;
+}
+/* Classe para botôes personalizados */
+.botao{
+    width: 80%; /* Nosso botão ocupa uma largura em 100% */
+    margin: 10px auto; /* Margem de 10px vericalmente e centralizado horizontal */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 25px;
+    border: 5px solid rebeccapurple; /* 3px é a espessura da minha borda, solid o formato e o greenyellow a cor */
+    border-radius: 30px; /* Bordas arredondadas */
+    background-color: transparent;
+    color: white;
+    background-image: url(https://www.gifcen.com/wp-content/uploads/2022/10/fire-gif-3.gif);
+    backdrop-filter: blur(200px);
+    cursor: pointer; /* mostra o ponteiro do mouse */
+    transition: transform 0.3s ease; /* tempo e suavidade da transição */
+
+}
+
+.botao:hover {
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(183, 0, 255);
+    font-weight: bold;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.2); /* aumenta 20% */
+
+}

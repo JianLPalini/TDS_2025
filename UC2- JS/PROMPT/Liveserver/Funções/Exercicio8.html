@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function promocao() {
+        let valorProduto = 100
+        let desconto = 0.15
+        let preçoComDesconto = valorProduto*desconto
+        let valorFinal = valorProduto - preçoComDesconto
+
+        alert("Valor total com desconto é: " + valorFinal.toFixed(2))
+        }
+        promocao()
+    </script>
+
+    
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const calcularDesconto = () => {
+            let precoOriginal = Number(prompt(" Digite o valor do produto:"))
+            let desconto = Number(prompt("Digite o valor do desconto (%) :"))
+            let preçoComDesconto = precoOriginal - (precoOriginal * (desconto/100))
+            alert(`Valor original: R$ ${precoOriginal} \n Valor com desconto de ${desconto} % é: R$ ${precoComDesconto}`)
+        }
+            calcularDesconto()
+    </script>
+
+    
+</body>
+</html>

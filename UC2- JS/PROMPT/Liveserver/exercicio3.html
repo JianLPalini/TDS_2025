@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 3</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+    <div id="res"></div>
+    <script>
+        let nota1 = Number(prompt("Digite a nota do aluno:"));
+        let nota2 = Number(prompt("Digite a nota do aluno:"));
+        let nota3 = Number(prompt("Digite a nota do aluno:"));
+
+        let media = ((nota1 + nota2 + nota3)/3) 
+        document.getElementById("res").innerHTML=`BOLETIM DE NOTAS:`
+        document.getElementById("res").innerHTML=`O resultado é: ${media.toFixed(2)} `
+        alert("Resultado: " + media  )
+     </script>
+</body>
+</html>
