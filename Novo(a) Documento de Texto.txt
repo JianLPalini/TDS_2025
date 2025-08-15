@@ -1,4 +1,4 @@
-md = UC4
+md = UC4 // comando md cria pasta alterar nome md = pastanome
 md = UC6
 md = UC7
 md = UC8
