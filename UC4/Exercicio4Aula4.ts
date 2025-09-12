@@ -7,11 +7,11 @@ class Pessoa {
         this.idade = idade;
     }
 
-    public fazerAniversario()void{
+    public fazerAniversario(): void{
         this.idade++;
         console.log(`Feliz aniversário ${this.nome}! Agora você tem ${this.idade} anos.`);
     }
-    public mostrarIdade()void{
+    public mostrarIdade(): void{
         console.log(`${this.nome} tem ${this.idade} anos.`);
     }
 
