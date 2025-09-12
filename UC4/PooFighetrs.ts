@@ -1,78 +1,78 @@
 // Atividade 1 -> Criar um sistema para um cliente leigo sem Jargão tecnico(Sistema Hospital)
 // Nome do grupo(Sidtopia)
+// Explicar para Poofigherts
 
-class Hospital{
-    // Informações Paciente:
-    private atendimento_registrado:number;
-    nome_paciente:string;
-    private cpf_paciente:string;
-    descricao_paciente:string;
-    alergia_paciente:string;
-    idade_paciente:number;
-    // Informação Medico:
-    private nome_medico:string;
-    idade_medico:number;
-    descricao_medico:string;
-    area_medico:string;
-    motivo_visita:string;
+class JogoLuta{
+    private Nomepersonagem:string;
+    ataque:number;
+    tipoArma:string;
+    danoArma:number;
+    private vida:number;
 
-    // Construtor para os itens do Hospital
-    constructor(nome_paciente:string,cpf_paciente:string,descricao_paciente:string,alergia_paciente:string,idade_paciente:number,nome_medico:string,idade_medico:number,descricao_medico:string,area_medico:string,motivo_visita:string){
-    
-    // Referencia ao Objeto
-    this.atendimento_registrado = 0;
-    this.alergia_paciente = alergia_paciente;
-    this.area_medico = area_medico;
-    this.cpf_paciente = cpf_paciente;
-    this.descricao_paciente = descricao_medico;
-    this.idade_medico = idade_medico;
-    this.motivo_visita = motivo_visita;
-    this.nome_medico = nome_medico;
-    this.nome_paciente = nome_paciente;
-    this.idade_paciente = idade_paciente;
-    this.descricao_paciente = descricao_paciente;
-    this.descricao_medico = descricao_medico;
-
+    constructor(Nomepersonagem:string,ataque:number,tipoArma:string,danoArma:number){
+        this.Nomepersonagem = Nomepersonagem;
+        this.ataque = ataque;
+        this.danoArma = danoArma;
+        this.tipoArma = tipoArma;
+        this.vida = 100;
     }
-
-    // Metodo Atendimento
-    atendimento(){
-        console.log(`Paciente ${this.nome_paciente} foi atendido por ${this.nome_medico}`)
+    atacar( dano: number):void{
+        dano = dano*0.5;
+        this.ataque += dano; 
+        console.log(`Dano Total: ${dano} Personagem: ${this.Nomepersonagem}`)
     }
-
-    //Metodo Ficha
-    ficha(){
-        console.log(`Paciente ${this.nome_paciente} Foi feito a ficha, para ser atendido por ${this.nome_medico}`)
+    defender(armadura:number):void{
+       this.vida =- armadura;
     }
-    registrado_atendimento(){
-        this.atendimento_registrado =+1;
-        console.log(`Total de Atendimento: ${this.atendimento_registrado}`)
+    ver_vida():void{
+        console.log(`Vida Atual: ${this.vida} Nome: ${this.Nomepersonagem}`)
     }
-
-     getNomePaciente(): string {
-        return this.nome_paciente;
+    dano_recebido(dano_inimigo:number):void{
+        this.vida -= dano_inimigo;
+        console.log(`Vida Atual personagem do Personagem: ${this.vida} Nome: ${this.Nomepersonagem}`)
     }
-
-    setNomePaciente(novoNome: string): void {
-        this.nome_paciente = novoNome;
-    }
-
-    getCpfPaciente(): string {
-        return this.cpf_paciente;
-    }
-
-    setCpfPaciente(novoCpf: string): void {
-        this.cpf_paciente = novoCpf;
-    }
-
-
 }
-// Contruir Paciente 1
-const paciente1 = new Hospital("Jian Machado Silva","1212121212","Homem Adulto","Dipirona",25,"Oswaldo Pereira",39,"Homem Adulto","Clinico Geral","Dor na Coluna");
-// Contruir Paciente 2
-const paciente2 = new Hospital("Erika Macho Silva Lima","1212121212","Adolecente","Dipirona",25,"Luis Pereira Lima silva",59,"Homem Adulto","Clinico Geral","Dor na Coluna");
 
-paciente1.atendimento();
-paciente2.ficha();
-paciente1.registrado_atendimento();
-paciente2.registrado_atendimento();
+const classe1 = new JogoLuta ("Scorpion",2,"Corrente",1);
+const classe2 = new JogoLuta ("SubZero",2,"Gelo",5);
+const classe5 = new JogoLuta ("Kitana",2,"Lekes",2);
+const classe6 = new JogoLuta ("Baraka",2,"Osso",7);
+
+
+classe1.atacar(20);
+classe2.atacar(20);
+classe5.atacar(30);
+classe6.atacar(15);
+
+classe1.dano_recebido(1);
+classe2.dano_recebido(1);
+classe5.dano_recebido(1);
+classe6.dano_recebido(1);
+
+classe1.ver_vida();
+classe2.ver_vida();
+classe5.ver_vida();
+classe6.ver_vida();
+
+classe1.dano_recebido(1);
+classe2.dano_recebido(1);
+classe5.dano_recebido(1);
+classe6.dano_recebido(1);
+
+
+classe1.ver_vida();
+classe2.ver_vida();
+classe5.ver_vida();
+classe6.ver_vida();
+
+
+classe1.dano_recebido(1);
+classe2.dano_recebido(1);
+classe5.dano_recebido(1);
+classe6.dano_recebido(1);
+
+
+classe1.ver_vida();
+classe2.ver_vida();
+classe5.ver_vida();
+classe6.ver_vida();
