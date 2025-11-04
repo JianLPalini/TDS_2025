@@ -15,5 +15,11 @@ public class Mamifero extends Animal{
         this.corDoPelo = corDoPelo;
     }
     
+    //Sobrescrever
+    @Override
+    public String fazerSom(){
+        return this.raca + "Está fazendo som alto.";
+    }
+    
     
 }
