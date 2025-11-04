@@ -20,5 +20,8 @@ public class Animal {
         return "Este animal é um(a) " + this.raca + " e pesa " + this.peso + "kg.";
     }
     
+    public String fazerSom(){
+        return "O animal está fazendo um som.";
+    }
     
 }
