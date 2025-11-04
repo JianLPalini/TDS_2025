@@ -15,4 +15,8 @@ public class Reptil extends Animal{
         this.corDasEscamas = corDasEscamas;
     }
     
+    @Override
+    public String fazerSom(){
+            return this.raca + " está latindo.";
+    }
 }
