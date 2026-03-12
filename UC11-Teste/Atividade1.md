@@ -43,8 +43,8 @@ Validar que o sistema **não permite cadastrar um usuário já existente**.
 ## 📝 Dados de Entrada
 | Campo | Valor |
 |------|------|
-| Nome | Maria Santos |
-| Email | maria@email.com |
+| Nome | Maria Takanuku |
+| Email | mariatakanuku@email.com |
 | Senha | senha123 |
 
 ## 🔄 Passos para Execução
