@@ -150,10 +150,10 @@
 
 | ID | Requisito | Descrição | Navegador | Ação | Resultado Esperado | Tipo |
 |:--:|:---------:|:---------:|:---------:|:----:|:-------------------:|:----:|
-| CT074 | RNF04 | Executar fluxo completo no Chrome | Chrome (v120+) | CT001, CT013, CT039, CT048 | Todas as funcionalidades operam corretamente | Compatibilidade |
+| CT074 | RNF04 | Executar fluxo completo no Chrome | Chrome (v120+) | CT001, CT013, CT038, CT048 | Todas as funcionalidades operam corretamente | Compatibilidade |
 | CT075 | RNF04 | Executar fluxo completo no Firefox | Firefox (v115+) | CT001, CT013, CT039, CT048 | Todas as funcionalidades operam corretamente | Compatibilidade |
 | CT076 | RNF04 | Executar fluxo completo no Edge | Edge (v120+) | CT001, CT013, CT039, CT048 | Todas as funcionalidades operam corretamente | Compatibilidade |
-| CT077 | RNF04 | Executar fluxo completo no Safari | Safari (v15+) | CT001, CT013, CT039, CT048 | Todas as funcionalidades operam corretamente | Compatibilidade |
+| CT077 | RNF04 | Executar fluxo completo no Safari | Safari (v15+) | CT001, CT013, CT038, CT048 | Todas as funcionalidades operam corretamente | Compatibilidade |
 | CT078 | RNF04 | Testar responsividade em smartphone | Chrome (Android) | Acessar em tela 375x667 | Interface adaptada, elementos acessíveis | Compatibilidade |
 | CT079 | RNF04 | Testar responsividade em tablet | Safari (iPad) | Acessar em tela 768x1024 | Interface adaptada, elementos acessíveis | Compatibilidade |
 
