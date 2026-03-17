@@ -173,15 +173,15 @@
 
 ##  QUARO RESUMO
 
-| Módulo | Requisito | Quantidade de Testes |
-|:------:|:---------:|:---------------------:|
-| **MÓDULO 1** | RF01 - Cadastro de Usuário | 12 |
+| Requisito | Quantidade de Testes |
+|:---------:|:---------------------:|
+| RF01 - Cadastro de Usuário | 12 |
 | | RF02 - Auteticação | 8 |
-| **MÓDULO 2** | RF03 - Criação de Eventos | 10 |
+| RF03 - Criação de Eventos | 10 |
 | | RF04 - Visualização de Eventos | 8 |
-| **MÓDULO 3** | RF05 - Inscrição em Eventos | 9 |
+| RF05 - Inscrição em Eventos | 9 |
 | | RF06 - Cancelamento | 8 |
-| **MÓDULO 4** | RNF01 - Validações | 5 |
+| RNF01 - Validações | 5 |
 | | RNF2 - Senhas | 7 |
 | | RNF03 - Performance | 6 |
 | | RNF04 - Compatibilidade | 6 |
