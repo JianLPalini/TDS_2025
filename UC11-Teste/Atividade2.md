@@ -27,14 +27,14 @@
 
 | ID | Requisito | Descrição | Pré-condição | Passos | Massa de Testes | Resultado Esperado | Tipo |
 |:--:|:---------:|:---------:|:------------:|:------:|:----------------:|:-------------------:|:----:|
-| CT013 | RF02 | Acessar com credenciais corretas | Conta de Rafaela Mendonça ativa | 1. Acessar tela de entrada<br>2. Informar e-mail e senha<br>3. Clicar em "Acessar" | E-mail: rafa.mendonca@provedor.com<br>Senha: Futebol@2024 | Autenticação bem-sucedida<br>Direcionamento para painel do participante | Positivo |
-| CT014 | RF02 | Acessar com senha incorreta | Conta ativa | 1. Acessar tela de entrada<br>2. Informar e-mail e senha errada | E-mail: rafa.mendonca@provedor.com<br>Senha: Futebol@2023 | Mensagem: "E-mail ou senha não conferem" | Negativo |
+| CT013 | RF02 | Acessar com credenciais corretas | Conta de Rafaela Mendonça ativa | 1. Acessar tela de entrada<br>2. Informar e-mail e senha<br>3. Clicar em "Acessar" | E-mail: sidtopia.peidinho@provedor.com<br>Senha: Sidlandia@2024 | Autenticação bem-sucedida<br>Direcionamento para painel do participante | Positivo |
+| CT014 | RF02 | Acessar com senha incorreta | Conta ativa | 1. Acessar tela de entrada<br>2. Informar e-mail e senha errada | E-mail: sidtopia.peidinho@provedor.com<br>Senha: Sidlandia@2024 | Mensagem: "E-mail ou senha não conferem" | Negativo |
 | CT015 | RF02 | Acessar com e-mail não registrado | E-mail inexistente | 1. Acessar tela de entrada<br>2. Informar e-mail não cadastrado | E-mail: usuario.inexistente@dominio.com<br>Senha: Qualquer@123 | Mensagem: "Usuário não encontrado no sistema" | Negativo |
-| CT016 | RF02 | Tentar acesso sem informar senha | - | 1. Acessar tela de entrada<br>2. Preencher apenas e-mail | E-mail: rafa.mendonca@provedor.com<br>Senha: (vazio) | Campo senha destacado como obrigatório | Negativo |
-| CT017 | RF02 | Tentar acesso com e-mail em branco | - | 1. Acessar tela de entrada<br>2. Preencher apenas senha | E-mail: (vazio)<br>Senha: Futebol@2024 | Campo e-mail destacado como obrigatório | Negativo |
-| CT018 | RF02 | Acessar com e-mail contendo espaços extras | Conta ativa | 1. Acessar tela de entrada<br>2. Digitar e-mail com espaços | E-mail: "  rafa.mendonca@provedor.com  "<br>Senha: Futebol@2024 | Sistema ignora espaços e autentica com sucesso | Positivo |
-| CT019 | RF02 | Bloqueio após múltiplas tentativas | Conta ativa | 1. Tentar login 5x com senha errada<br>2. Tentar novamente com senha correta | E-mail: rafa.mendonca@provedor.com<br>Senha correta: Futebol@2024 | Mensagem: "Conta temporariamente bloqueada por segurança. Tente novamente em 30 minutos" | Negativo |
-| CT020 | RF02 | Acessar com letras maiúsculas no e-mail | Conta ativa | 1. Acessar tela de entrada<br>2. Digitar e-mail em CAIXA ALTA | E-mail: "RAFA.MENDONCA@PROVEDOR.COM"<br>Senha: Futebol@2024 | Sistema normaliza e autentica com sucesso | Positivo |
+| CT016 | RF02 | Tentar acesso sem informar senha | - | 1. Acessar tela de entrada<br>2. Preencher apenas e-mail | E-mail: sidtopia.peidinho@provedor.com<br>Senha: (vazio) | Campo senha destacado como obrigatório | Negativo |
+| CT017 | RF02 | Tentar acesso com e-mail em branco | - | 1. Acessar tela de entrada<br>2. Preencher apenas senha | E-mail: (vazio)<br>Senha: Sidlandia@2024 | Campo e-mail destacado como obrigatório | Negativo |
+| CT018 | RF02 | Acessar com e-mail contendo espaços extras | Conta ativa | 1. Acessar tela de entrada<br>2. Digitar e-mail com espaços | E-mail: "  sidtopia.peidinho@provedor.com  "<br>Senha: Sidlandia@2024 | Sistema ignora espaços e autentica com sucesso | Positivo |
+| CT019 | RF02 | Bloqueio após múltiplas tentativas | Conta ativa | 1. Tentar login 5x com senha errada<br>2. Tentar novamente com senha correta | E-mail: sidtopia.peidinho@provedor.com<br>Senha correta: Sidlandia@2024 | Mensagem: "Conta temporariamente bloqueada por segurança. Tente novamente em 30 minutos" | Negativo |
+| CT020 | RF02 | Acessar com letras maiúsculas no e-mail | Conta ativa | 1. Acessar tela de entrada<br>2. Digitar e-mail em CAIXA ALTA | E-mail: "SIDTOPIA.PEIDINHO@PROVEDOR.COM"<br>Senha: Sidlandia@2024 | Sistema normaliza e autentica com sucesso | Positivo |
 
 ---
 
@@ -78,15 +78,15 @@
 
 | ID | Requisito | Descrição | Pré-condição | Passos | Massa de Testes | Resultado Esperado | Tipo |
 |:--:|:---------:|:---------:|:------------:|:------:|:----------------:|:-------------------:|:----:|
-| CT039 | RF05 | Participante se inscrever em evento disponível | Rafaela logada, evento com 200 vagas, 45 inscritos | 1. Acessar página do evento<br>2. Clicar em "Quero Participar" | Evento: "Conferência de Inovação 2025" | Confirmação: "Inscrição realizada com sucesso!"<br>Vagas atualizadas: 154 disponíveis | Positivo |
-| CT040 | RF05 | Tentar inscrição duplicada | Rafaela já inscrita no evento | 1. Acessar mesma página do evento<br>2. Clicar novamente em "Quero Participar" | - | Mensagem: "Você já está inscrito neste evento"<br>Botão alterado para "Inscrição Confirmada" | Negativo |
+| CT039 | RF05 | Participante se inscrever em evento disponível | Sid logado, evento com 200 vagas, 45 inscritos | 1. Acessar página do evento<br>2. Clicar em "Quero Participar" | Evento: "Conferência de Inovação 2025" | Confirmação: "Inscrição realizada com sucesso!"<br>Vagas atualizadas: 154 disponíveis | Positivo |
+| CT040 | RF05 | Tentar inscrição duplicada | Sid já inscrito no evento | 1. Acessar mesma página do evento<br>2. Clicar novamente em "Quero Participar" | - | Mensagem: "Você já está inscrito neste evento"<br>Botão alterado para "Inscrição Confirmada" | Negativo |
 | CT041 | RF05 | Inscrever-se em evento lotado | Evento com 0 vagas | 1. Acessar evento lotado<br>2. Tentar inscrição | - | Mensagem: "Evento esgotado"<br>Botão desabilitado | Negativo |
 | CT042 | RF05 | Inscrever-se em evento já realizado | Evento com data 01/01/2024 | 1. Acessar evento passado | - | Botão "Quero Participar" ausente ou desabilitado<br>Mensagem: "Evento já encerrado" | Negativo |
 | CT043 | RF05 | Usuário não autenticado tentar inscrição | Visitante não logado | 1. Acessar evento<br>2. Clicar em "Quero Participar" | - | Redirecionamento para tela de login<br>Mensagem: "Faça login para realizar sua inscrição" | Negativo |
 | CT044 | RF05 | Concorrência na última vaga | Evento com 1 vaga restante | 1. Dois usuários tentam inscrição simultaneamente | - | Apenas um confirma inscrição<br>Outro recebe: "Vaga preenchida durante sua tentativa" | Concorrência |
-| CT045 | RF05 | Inscrever-se em evento com restrição de idade | Evento para maiores de 18 anos, Rafaela tem 32 | 1. Tentar inscrição | - | Inscrição permitida (idade compatível) | Positivo |
+| CT045 | RF05 | Inscrever-se em evento com restrição de idade | Evento para maiores de 18 anos, Sid tem 32 | 1. Tentar inscrição | - | Inscrição permitida (idade compatível) | Positivo |
 | CT046 | RF05 | Inscrever-se em evento com restrição de idade | Evento para maiores de 18 anos, usuário de 16 anos | 1. Tentar inscrição | Usuário: Sofia Oliveira (9 anos) | Mensagem: "Evento não recomendado para sua faixa etária"<br>Inscrição bloqueada | Negativo |
-| CT047 | RF05 | Verificar contador de inscritos após registro | Rafaela se inscreve | 1. Realizar inscrição<br>2. Observar atualização | - | Contador: "46 participantes confirmados" (antes 45) | Positivo |
+| CT047 | RF05 | Verificar contador de inscritos após registro | Sid se inscreve | 1. Realizar inscrição<br>2. Observar atualização | - | Contador: "46 participantes confirmados" (antes 45) | Positivo |
 
 ---
 
@@ -94,14 +94,14 @@
 
 | ID | Requisito | Descrição | Pré-condição | Passos | Massa de Testes | Resultado Esperado | Tipo |
 |:--:|:---------:|:---------:|:------------:|:------:|:----------------:|:-------------------:|:----:|
-| CT048 | RF06 | Participante cancelar sua inscrição | Rafaela inscrita na "Conferência de Inovação 2025" (154 vagas disp.) | 1. Acessar "Minhas Inscrições"<br>2. Localizar evento<br>3. Clicar em "Cancelar participação"<br>4. Confirmar | - | Cancelamento confirmado<br>Vagas disponíveis: 155<br>Notificação enviada por e-mail | Positivo |
-| CT049 | RF06 | Cancelar inscrição em evento que não participa | Rafaela não inscrita em determinado evento | 1. Acessar página do evento<br>2. Tentar cancelar | - | Opção de cancelamento não disponível<br>Mensagem: "Você não possui inscrição ativa neste evento" | Negativo |
+| CT048 | RF06 | Participante cancelar sua inscrição | Sid inscrito na "Conferência de Inovação 2025" (154 vagas disp.) | 1. Acessar "Minhas Inscrições"<br>2. Localizar evento<br>3. Clicar em "Cancelar participação"<br>4. Confirmar | - | Cancelamento confirmado<br>Vagas disponíveis: 155<br>Notificação enviada por e-mail | Positivo |
+| CT049 | RF06 | Cancelar inscrição em evento que não participa | Sid não inscrito em determinado evento | 1. Acessar página do evento<br>2. Tentar cancelar | - | Opção de cancelamento não disponível<br>Mensagem: "Você não possui inscrição ativa neste evento" | Negativo |
 | CT050 | RF06 | Cancelar sem estar logado | Visitante não autenticado | 1. Acessar URL de cancelamento diretamente | - | Redirecionamento para tela de login | Negativo |
-| CT051 | RF06 | Cancelar inscrição em evento passado | Rafaela inscrita em evento de 01/01/2024 | 1. Acessar "Minhas Inscrições"<br>2. Verificar evento passado | - | Botão de cancelamento desabilitado<br>Mensagem: "Evento já realizado" | Negativo |
-| CT052 | RF06 | Verificar liberação de vaga | Após cancelamento de Rafaela, novo usuário se inscreve | 1. Rafaela cancela<br>2. Paulo tenta inscrição | Usuário: Paulo Henrique | Paulo consegue inscrição com sucesso | Positivo |
+| CT051 | RF06 | Cancelar inscrição em evento passado | Sid inscrito em evento de 01/01/2024 | 1. Acessar "Minhas Inscrições"<br>2. Verificar evento passado | - | Botão de cancelamento desabilitado<br>Mensagem: "Evento já realizado" | Negativo |
+| CT052 | RF06 | Verificar liberação de vaga | Após cancelamento de Rafaela, novo usuário se inscreve | 1. Sid cancela<br>2. Paulo tenta inscrição | Usuário: Paulo Henrique | Paulo consegue inscrição com sucesso | Positivo |
 | CT053 | RF06 | Administrador cancelar evento inteiro | Admin logado, evento com 50 inscritos | 1. Acessar painel admin<br>2. Selecionar evento<br>3. Clicar em "Cancelar Evento"<br>4. Justificar | Motivo: "Problemas logísticos" | Evento marcado como cancelado<br>Todos os inscritos notificados<br>Vagas liberadas | Positivo |
 | CT054 | RF06 | Cancelar inscrição de outro participante | Usuário tenta cancelar inscrição alheia | 1. Acessar página do evento<br>2. Tentar manipular requisição | - | Sistema rejeita: "Operação não autorizada" | Negativo |
-| CT055 | RF06 | Cancelar e reinscrever-se no mesmo dia | Rafaela cancela e muda de ideia | 1. Cancelar inscrição<br>2. Tentar nova inscrição no mesmo evento | - | Nova inscrição permitida (se houver vagas) | Positivo |
+| CT055 | RF06 | Cancelar e reinscrever-se no mesmo dia | Sid cancela e muda de ideia | 1. Cancelar inscrição<br>2. Tentar nova inscrição no mesmo evento | - | Nova inscrição permitida (se houver vagas) | Positivo |
 
 ---
 
