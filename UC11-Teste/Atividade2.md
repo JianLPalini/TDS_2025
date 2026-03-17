@@ -2,7 +2,7 @@
 
 ---
 
-##  MÓDULO 1 - GERENCIAMENTO DE USUÁRIOS
+##  GERENCIAMENTO DE USUÁRIOS
 
 ### RF01 — Cadastro de Usuário
 
@@ -38,7 +38,7 @@
 
 ---
 
-##  MÓDULO 2 - ADMINISTRAÇÃO DE EVENTOS
+##  ADMINISTRAÇÃO DE EVENTOS
 
 ### RF03 — Criação de Eventos
 
@@ -72,9 +72,9 @@
 
 ---
 
-##  MÓDULO 3 - PARTICIPAÇÃO EM EVENTOS
+##  PARTICIPAÇÃO EM EVENTOS
 
-### RF05 — Registro em Eventos
+### RF05 — Registro em Evento
 
 | ID | Requisito | Descrição | Pré-condição | Passos | Massa de Testes | Resultado Esperado | Tipo |
 |:--:|:---------:|:---------:|:------------:|:------:|:----------------:|:-------------------:|:----:|
@@ -105,7 +105,7 @@
 
 ---
 
-##  MÓDULO 4 - REQUISITOS TÉCNICOS
+##  REQUISITOS TÉCNICOS
 
 ### RNF01 — Validações Obrigatórias
 
